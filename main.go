@@ -67,16 +67,16 @@ func main() {
 	log.Printf("OCM v%s Started up\n", tracking.GetVersion())
 
 	app := wails.CreateApp(&wails.AppConfig{
-		Width:  800,
-		Height: 400,
-		Title:  "Vertcoin One Click Miner",
+		Width:  1000,
+		Height: 500,
+		Title:  "Project Mill",
 		JS:     js,
 		CSS:    css,
 		Colour: "#131313",
 	})
 
 	alreadyRunning := false
-	s := single.New("vertcoin-ocm")
+	s := single.New("Project Mill")
 	if err := s.CheckLock(); err != nil && err == single.ErrAlreadyRunning {
 		alreadyRunning = true
 	} else if err == nil {

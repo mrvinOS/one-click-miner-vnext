@@ -59,7 +59,8 @@
         "closed_source" : "使用闭源的矿工",
         "closed_source_sub" : "更好的哈希率，但是未经审核的矿工会产生开发人员的费用",
         "closed_source_warning" : "你选择使用闭源的矿工。绿币（VTC）不支持这些矿工。他们无法对其内容进行审核并且可能包含损害你的电脑的功能。",
-        "save_n_restart" : "保存及重启"
+        "save_n_restart" : "保存及重启",
+        "select_background" : "选择背景"
     },
     "tabbar" : {
         "wallet" : "钱包",
@@ -72,7 +73,8 @@
         "disable_tracking" : "停用",
         "tracking_disabled" : "你没有共享使用情况统计信息",
         "enable_tracking" : "启用这些可以帮我们改善你的应用体验",
-        "report_issue" : "报告问题"
+        "report_issue" : "报告问题",
+        "about_project_mill": "关于"
     },
     "update" : {
         "new_version_available" : "新版本可用",

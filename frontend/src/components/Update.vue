@@ -1,15 +1,18 @@
 <template>
   <div class="container">
     <div class="col-wide">
-      <p>{{ $t('update.new_version_available') }}: {{version}}</p>
-      <div class="releaseNotes">
+      <div class='block_main_bg'  style="padding-top: 5px">
+        <p>{{ $t('update.new_version_available') }}: {{version}}</p>
+      </div>
+      <div class='block_main_bg releaseNotes' >
         <pre>{{notes}}</pre>
       </div>
+
       <p>
-        <a class="button" @click="download">{{ $t('update.download') }}</a>
+        <a class="button"   @click="download">{{ $t('update.download') }}</a>
       </p>
       <p>
-        <a class="link" @click="back">{{ $t('generic.back_to_wallet') }}</a>
+        <a class="link"  @click="back">{{ $t('generic.back_to_wallet') }}</a>
       </p>
     </div>
   </div>

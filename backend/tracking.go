@@ -23,3 +23,7 @@ func (m *Backend) TrackingEnabled() string {
 func (m *Backend) ReportIssue() {
 	util.OpenBrowser("https://github.com/vertcoin-project/one-click-miner-vnext/issues/new")
 }
+
+func (m *Backend) AboutPM() {
+	util.OpenBrowser("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+}

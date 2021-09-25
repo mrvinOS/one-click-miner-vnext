@@ -1,10 +1,16 @@
 <template>
   <div class="container">
     <div v-if="prerequisiteInstall" class="col-286">
-      <p>{{ $t("checks.prerequisite") }}</p>
+      <div class='block_main_bg' >
+        <p>{{ $t("checks.prerequisite") }}</p>
+      </div>
     </div>
-    <div v-if="!prerequisiteInstall && checkStatus !== 'Failed'" class="col-286">
-      <p>{{checkStatus === null ? $t("checks.checking_mining_software") : (checkStatus === 'Failed' ? 'Failed' : $t("checks." + checkStatus)) }}</p>
+   
+    <div v-if="!prerequisiteInstall && checkStatus !== 'Failed'" class="col-286 ">
+    
+      <div class='block_main_bg'  style="padding-top: 10px">
+       <p>{{checkStatus === null ? $t("checks.checking_mining_software") : (checkStatus === 'Failed' ? 'Failed' : $t("checks." + checkStatus)) }}</p>
+      </div>
       <div class="verthashProgress" v-if="verthashProgress !== 0">
         <div class="progressBar">
           <div class="progress" v-bind:style="{width: verthashProgress + '%'}">&nbsp;</div>
@@ -12,14 +18,17 @@
         <div class="progressText">{{Math.floor(verthashProgress)}}%</div>
       </div>
     </div>
+    
+    
     <div v-if="!prerequisiteInstall && checkStatus === 'Failed'" class="col-wide">
       <div class="failureReason" v-if="checkStatus === 'Failed'">
         {{ $t("checks.checks_failed") }}:
         <br />&nbsp;<br />
         {{failureReason}}
+        
       </div>
       <p v-if="!prerequisiteInstall && checkStatus === 'Failed'">
-        <a class="button" @click="check">{{ $t('generic.retry') }}</a>
+        <a class="button"  @click="check">{{ $t('generic.retry') }}</a>
       </p>
     </div>
   </div>
@@ -51,7 +60,6 @@ export default {
   methods: {
     check: function() {
       var self = this;
-
       window.backend.Backend.PerformChecks().then(result => {
         if (result === "ok") {
           self.startMining();
@@ -81,13 +89,16 @@ div.failureReason {
   border: 1px solid red;
   width: 600px;
   margin: 0 auto;
+    
+   
+    padding: 0px 35px 15px 35px ;
+    border-radius: 10px;
+  
 }
-
 div.verthashProgress {
   margin: 0 auto;
   width: 200px;
 }
-
 div.progressBar {
   border: 1px solid #048652;
   height: 10px;
@@ -96,7 +107,6 @@ div.progressBar {
   padding: 0px;
   margin-bottom: 10px;
 }
-
 div.progress {
   float:left;
   background-color: #048652;
@@ -104,5 +114,5 @@ div.progress {
   padding: 0px;
   height: 10px; 
 }
-</style>
 
+</style>

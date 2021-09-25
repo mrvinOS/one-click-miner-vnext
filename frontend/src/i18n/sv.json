@@ -59,7 +59,8 @@
     "closed_source": "Använd mining mjukvara med stängd källkod (Proprietär programvara)",
     "closed_source_sub": "Ger bättre hashrate, men källkoden är ej granskad och mjukvaran har en avgift till utvecklaren",
     "closed_source_warning": "Du har valt att använda mining mjukvara med sluten källkod. Vertcoin stöder inte denna mjukvara. Källkoden kan inte granskas och kan inehålla delar som skadar din dator.",
-    "save_n_restart": "Spara & starta om"
+    "save_n_restart": "Spara & starta om",
+    "select_background" : "Välj bakgrund"
   },
   "tabbar": {
     "wallet": "Plånbok",
@@ -72,7 +73,8 @@
     "disable_tracking": "Inaktivera",
     "tracking_disabled": "Du delar inte användningsstatistik",
     "enable_tracking": "Aktivera dessa för att hjälpa oss förbättra One-Click Miner",
-    "report_issue": "Rapportera ett problem"
+    "report_issue": "Rapportera ett problem",
+    "about_project_mill": "Om"
   },
   "update": {
     "new_version_available": "Ny version tillgänglig",

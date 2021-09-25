@@ -71,7 +71,8 @@
         "skipverthashverify" : "Nie weryfikuj Verthash podczas uruchamiania",
         "skipverthashverify_sub" : "Weryfikacja integralności pliku verthash.dat podczas uruchamiania zostanie pominięta (niezalecane)",
         "save_n_restart" : "Zapisz i Wznów",
-        "pool" : "Kopalnia"
+        "pool" : "Kopalnia",
+        "select_background" : "Wybierz tło"
     },
     "tabbar" : {
         "wallet" : "Portfel",
@@ -84,7 +85,8 @@
         "disable_tracking" : "Wyłącz",
         "tracking_disabled" : "Udostępnianie statystyk wyłączone",
         "enable_tracking" : "Włącz statystyki, by pomóc nam w rozwoju programu",
-        "report_issue" : "Zgłoś problem z programem"
+        "report_issue" : "Zgłoś problem z programem",
+        "about_project_mill": "O"
     },
     "update" : {
         "new_version_available" : "Dostępna nowa wersja",
