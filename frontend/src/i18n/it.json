@@ -71,7 +71,8 @@
         "skipverthashverify" : "Non verificare Verthash all'avvio",
         "skipverthashverify_sub" : "Salta la verifica di integrità del file dei dati di Verthash all'avvio (non raccomandato)",
         "save_n_restart" : "Salva e Riavvia",
-        "pool" : "Pool di mining"
+        "pool" : "Pool di mining",
+        "select_background" : "Seleziona sfondo"
     },
     "tabbar" : {
         "wallet" : "Portafoglio",
@@ -84,7 +85,8 @@
         "disable_tracking" : "Disabilita",
         "tracking_disabled" : "Non stai condividendo le statistiche sull'utilizzo",
         "enable_tracking" : "Condividile per aiutarci a migliorare la tua esperienza",
-        "report_issue" : "Segnala un problema"
+        "report_issue" : "Segnala un problema",
+        "about_project_mill": "A proposito di"
     },
     "update" : {
         "new_version_available" : "Nuova versione disponibile",

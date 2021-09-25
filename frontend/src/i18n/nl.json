@@ -59,7 +59,8 @@
         "closed_source" : "Gebruik miners zonder open broncode",
         "closed_source_sub" : "Betere performance, maar de software is niet gecontroleerd, en je betaalt een percentage aan de ontwikkelaars",
         "closed_source_warning" : "Je hebt ervoor gekozen om miners zonder open broncode te gebruiken. Vertcoin raadt dat niet aan en ondersteunt dit niet. De software kan niet gecontroleerd worden en kan functies bevatten die je computer beschadigen.",
-        "save_n_restart" : "Opslaan & Herstarten"
+        "save_n_restart" : "Opslaan & Herstarten",
+        "select_background" : "Selecteer achtergrond"
     },
     "tabbar" : {
         "wallet" : "Portemonnee",
@@ -72,7 +73,8 @@
         "disable_tracking" : "Schakel uit",
         "tracking_disabled" : "Je deelt geen gebruiksstatistieken",
         "enable_tracking" : "Schakel in om ons te helpen zaken te verbeteren",
-        "report_issue" : "Meld een probleem"
+        "report_issue" : "Meld een probleem",
+        "about_project_mill": "Over"
     },
     "update" : {
         "new_version_available" : "Nieuwe versie beschikbaar",

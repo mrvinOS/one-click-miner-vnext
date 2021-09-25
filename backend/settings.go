@@ -1,8 +1,11 @@
 package backend
 
 import (
+	"bufio"
 	"fmt"
 	"math/rand"
+	"os"
+	"path/filepath"
 	"strconv"
 	"time"
 
@@ -173,4 +176,66 @@ func (m *Backend) PrerequisiteProxyLoop() {
 		}
 		m.runtime.Events.Emit("prerequisiteInstall", send)
 	}
+}
+
+func (m *Backend) SaveBg(bg string) {
+
+	bgPath := filepath.Join(util.DataDirectory(), "background")
+	f, err := os.OpenFile(bgPath, os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
+	if err != nil { logging.Errorf("Open error: %s\n", err) }
+	f.WriteString(bg)
+	f.WriteString("\n")
+	err = f.Close();
+	if err != nil { logging.Errorf("Close error: %s\n", err) }
+}
+
+func (m *Backend) ReadBg() string {
+
+	bgPath := filepath.Join(util.DataDirectory(), "background")
+	if _, err := os.Stat(bgPath); err == nil {
+		f, err := os.Open(bgPath)
+		if err != nil { return "" }
+
+		reader := bufio.NewReader(f)
+		var line string
+		line, err = reader.ReadString('\n')
+		err = f.Close();
+		if err != nil { logging.Errorf("Close error: %s", err) }
+
+		//logging.Infof(line)
+		return line
+	}
+
+	return ""
+}
+
+func (m *Backend) SaveTheme(theme string) {
+
+	themePath := filepath.Join(util.DataDirectory(), "theme")
+	f, err := os.OpenFile(themePath, os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
+	if err != nil { logging.Errorf("Open error: %s\n", err) }
+	f.WriteString(theme)
+	f.WriteString("\n")
+	err = f.Close();
+	if err != nil { logging.Errorf("Close error: %s\n", err) }
+}
+
+func (m *Backend) ReadTheme() string {
+
+	themePath := filepath.Join(util.DataDirectory(), "theme")
+	if _, err := os.Stat(themePath); err == nil {
+		f, err := os.Open(themePath)
+		if err != nil { return "" }
+
+		reader := bufio.NewReader(f)
+		var line string
+		line, err = reader.ReadString('\n')
+		err = f.Close();
+		if err != nil { logging.Errorf("Close error: %s", err) }
+
+		//logging.Infof(line)
+		return line
+	}
+
+	return ""
 }

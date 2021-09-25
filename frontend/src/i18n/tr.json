@@ -69,7 +69,8 @@
         "skipverthashverify":"Başlangıçta Verthash'i doğrulama",
         "skipverthashverify_sub":"Başlangıçta Verthash dosyasının bütünlüğünü doğrulamayı atlayacak (önerilmez)",
         "save_n_restart" : "Kaydet ve Yeniden Başlat",
-        "pool": "Madenci havuzu"
+        "pool": "Madenci havuzu",
+        "select_background" : "Arkaplan seç"
     },
     "tabbar" : {
         "wallet" : "Cüzdan",
@@ -82,7 +83,8 @@
         "disable_tracking" : "Deaktive et",
         "tracking_disabled" : "Kullanım istatistiği yollamıyorsunuz",
         "enable_tracking" : "Kullanıcı deneyimini geliştirmemize yardımcı olmak için aktif edin",
-        "report_issue" : "Sorun bildir"
+        "report_issue" : "Sorun bildir",
+        "about_project_mill": "hakkında"
     },
     "update" : {
         "new_version_available" : "Yeni bir versiyon mevcut",

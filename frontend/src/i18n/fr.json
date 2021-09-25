@@ -59,7 +59,8 @@
         "closed_source" : "Utiliser des logiciels de minage propriétaires",
         "closed_source_sub" : "Meilleur taux de hachage, mais logiciel de minage ne rétribuant pas les développeurs",
         "closed_source_warning" : "Vous avez choisi d'utiliser des logiciels de minage propriétaires. Vertcoin n'en assure pas le support. Leur contenu ne peut pas être audité et pourrait comporter des fonctions qui endommagent votre ordinateur.",
-        "save_n_restart" : "Enregistrer & Redémarrer"
+        "save_n_restart" : "Enregistrer & Redémarrer",
+        "select_background" : "Sélectionnez l'arrière-plan"
     },
     "tabbar" : {
         "wallet" : "Portefeuille",
@@ -72,7 +73,8 @@
         "disable_tracking" : "Désactiver",
         "tracking_disabled" : "Vous ne partagez pas vos statistiques d'utilisation",
         "enable_tracking" : "Activer cette option pour nous permettre d'améliorer votre expérience utilisateur",
-        "report_issue" : "Signaler un problème"
+        "report_issue" : "Signaler un problème",
+        "about_project_mill": "À propos du"
     },
     "update" : {
         "new_version_available" : "Nouvelle version disponible",

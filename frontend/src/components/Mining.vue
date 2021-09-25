@@ -1,8 +1,11 @@
 <template>
   <div class="container">
+   <div class='block_main_bg' >
     <div class="col-286">
+
       <p class="header">{{$t('mining.spendable_balance')}}:</p>
       <p class="spendableBalance">
+ 
         <a class="tiny" @click="refreshBalance">
           <svg
             width="16"
@@ -17,6 +20,7 @@
             style="enable-background:new 0 0 458.186 458.186;"
             xml:space="preserve"
           >
+      
             <g>
               <g>
                 <path
@@ -33,6 +37,7 @@
             </g>
           </svg>
         </a>
+
         &nbsp;{{balance}} VTC
         <a class="tiny" @click="copyAddress" v-bind:title="$t('mining.copy_address')">
           <svg width="16" height="16" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -53,6 +58,7 @@
           </svg>
         </a>
       </p>
+          
       <p class="immatureBalance" v-if="balanceImmature != '0.00000000'">
         (
         <span style="opacity: 1">{{balanceImmature}} VTC</span>
@@ -82,11 +88,13 @@
         v-if="runningMiners > 0 && hashrate === '0.00 MH/s'"
         class="earning"
       >{{$t('mining.estimating')}}{{spinner}}</p>
+      </div>
+      </div>
       <p>
-        <a class="button" v-if="stopping">{{spinner}}</a>
-        <a class="button" @click="stop" v-if="!stopping">{{$t('mining.stop_mining')}}</a>
+        <a class="button"  v-if="stopping">{{spinner}}</a>
+        <a class="button"  @click="stop" v-if="!stopping">{{$t('mining.stop_mining')}}</a>
       </p>
-    </div>
+    
   </div>
 </template>
 

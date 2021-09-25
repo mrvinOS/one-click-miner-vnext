@@ -59,7 +59,8 @@
         "closed_source" : "Uporabi zaprto programsko opremo za rudarstvo",
         "closed_source_sub" : "Boljši hashrate, vendar neocenjena programska opema, ki lahko vključuje pristojbino za razvojne inženirje",
         "closed_source_warning" : "Izbrali ste zaprto programsko opremo za rudarstvo. Vertcoin ne odobrava ali podpira njihovo uporabo. Ne more se preveriti njihovo vsebino tako, da lahko potencijalno vsebuje funkcije, ki lahko poškoduje vaš računalnik.",
-        "save_n_restart" : "Shrani & Znova zaženi"
+        "save_n_restart" : "Shrani & Znova zaženi",
+        "select_background" : "Izberite ozadje"
     },
     "tabbar" : {
         "wallet" : "Denarnica",
@@ -72,7 +73,8 @@
         "disable_tracking" : "Onemogoči",
         "tracking_disabled" : "Ne delite statistike o uporabi",
         "enable_tracking" : "Omogočite jih, da bi nam pomagali izboljšati vaše izkušnje",
-        "report_issue" : "Prijavite težavo"
+        "report_issue" : "Prijavite težavo",
+        "about_project_mill": "O"
     },
     "update" : {
         "new_version_available" : "Na voljo je nova različica",

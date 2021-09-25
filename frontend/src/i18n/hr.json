@@ -59,7 +59,8 @@
         "closed_source" : "Koristi softver za rudarenje zatvorenog koda",
         "closed_source_sub" : "Bolji hashrate, ali neocijenjeni softver za rudarenje može uključivati naknadu za razvojne inženjere",
         "closed_source_warning" : "Odlučili ste koristiti softver(e) za rudarenje zatvorenog koda. Vertcoin ne odobrava i ne podržava njihovu upotrebu. Ne može se provjeriti njihov sadržaj i potencijalno mogu sadržavati funkcije koje mogu oštetiti vaše računalo.",
-        "save_n_restart" : "Spremi i ponovno pokreni"
+        "save_n_restart" : "Spremi i ponovno pokreni",
+        "select_background" : "Odaberite pozadinu"
     },
     "tabbar" : {
         "wallet" : "Novčanik",
@@ -72,7 +73,8 @@
         "disable_tracking" : "Onemogući",
         "tracking_disabled" : "Ne dijelite statistiku o korištenju",
         "enable_tracking" : "Omogućite i pomognite nam da unaprijedimo korisničko iskustvo",
-        "report_issue" : "Prijavite problem"
+        "report_issue" : "Prijavite problem",
+        "about_project_mill": "O"
     },
     "update" : {
         "new_version_available" : "Nova verzija je dostupna",

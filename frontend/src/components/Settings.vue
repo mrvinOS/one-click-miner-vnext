@@ -1,6 +1,8 @@
 <template>
   <div class="settings-container">
-    <div class="col-settings" v-if="!showWarning">
+  <div class='block_main_bg' >
+    <div class="col-settings " v-if="!showWarning">
+
       <div class="col-settings-sub">
         <p style="text-align: left" >
           <input type="checkbox" v-model="debugging" />
@@ -14,6 +16,12 @@
           <br />
           <span class="subtext">{{ $t("settings.auto_start_sub") }}</span>
         </p>
+        <div >
+          <input id="imageId" type="file" @change="selectBg" accept=".png" hidden>
+          <p style="text-align: left">
+            <button class="innerButton" @click="selectBgButton" >{{ $t("settings.select_background") }}</button>
+          </p>
+        </div>
       </div>
       <div class="col-settings-sub">
         <p style="text-align: left">
@@ -39,23 +47,27 @@
         </p>
       </div>
     </div>
-    <div class="col-286 height-100" v-if="!showWarning">
+   
+  </div>
+   <div  v-if="!showWarning">
       <p>
-        <a class="button" @click="save">{{ $t("settings.save_n_restart") }}</a>
+        <a class="button"  @click="save">{{ $t("settings.save_n_restart") }}</a>
       </p>
     </div>
-    <div class="col-286" v-if="showWarning">
+    <div  v-if="showWarning">
       <div class="warning" v-if="closedSourceMiner && showWarning">
         <p>{{ $t("settings.closed_source_warning") }}</p>
       </div>
-       <p>
-        <a class="button" @click="toggleWarning">{{ $t("generic.close") }}</a>
-      </p>
+
     </div>
+    
   </div>
+  
 </template>
 
 <script>
+
+
 export default {
   data() {
     return {
@@ -119,9 +131,28 @@ export default {
           });
         }
       );
+    },
+    selectBg: function(event) {
+
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        document.getElementById('bg').src = e.target.result;
+        window.backend.Backend.SaveBg(e.target.result);
+      }
+      reader.readAsDataURL(event.target.files.item(0));
+
+    },
+    selectBgButton: function () {
+      document.getElementById('imageId').click();
     }
   }
+
 };
+
+
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -134,7 +165,9 @@ div.warning {
   text-align: justify;
   line-height: 10pt;
   font-size: 10pt;
+  
 }
+
 a.warning {
   display: block; 
   float:right;
@@ -147,7 +180,6 @@ div.warning p {
   padding: 0px;
 }
 span.subtext {
-  opacity: 0.6;
   font-size: 8pt;
 }
 </style>

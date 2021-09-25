@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div class="col-286" v-if="alreadyRunning === false && walletInitialized === 0">
+      <div class='block_main_bg'  style="padding-top: 0.1px">
       <p>{{ $t("welcome.makeapassword") }}</p>
       <p class="error" v-if="error !== ''">{{error}}</p>
       <p>
@@ -14,20 +15,25 @@
           @keyup.enter="initAndStart"
         />
       </p>
+      </div>
       <p>
-        <a class="button" @click="initAndStart">{{ $t("welcome.startmining") }}</a>
+        <a class="button"  @click="initAndStart">{{ $t("welcome.startmining") }}</a>
       </p>
     </div>
     <div class="col-286" v-if="alreadyRunning === false && walletInitialized === 1">
-      <p>{{ $t("welcome.click_button_to_start") }}</p>
+      <div class='block_main_bg'  style="padding-top: 5px">
+        <p>{{ $t("welcome.click_button_to_start") }}</p>
+      </div>
       <p>
-        <a class="button" @click="start">{{ $t("welcome.startmining") }}</a>
+        <a class="button"  @click="start">{{ $t("welcome.startmining") }}</a>
       </p>
     </div>
     <div class="col-286" v-if="alreadyRunning === true">
-      <p>{{ $t("welcome.alreadyrunning") }}</p>
+      <div class='block_main_bg'  style="padding-top: 5px">
+        <p>{{ $t("welcome.alreadyrunning") }}</p>
+      </div>
       <p>
-        <a class="button" @click="close">{{ $t("generic.close") }}</a>
+        <a class="button"  @click="close">{{ $t("generic.close") }}</a>
       </p>
     </div>
   </div>

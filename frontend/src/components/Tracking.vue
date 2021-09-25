@@ -8,7 +8,8 @@
       </span> -
       <span>{{ $t('tracking.tracking_enabled') }}.&nbsp;</span>
       <a @click="disableTracking">{{ $t('tracking.disable_tracking') }}</a> -
-      <a @click="reportIssue">{{ $t('tracking.report_issue') }}</a>
+      <a @click="reportIssue">{{ $t('tracking.report_issue') }}</a> -
+      <a style="display: none" @click="aboutPM"> {{$t('tracking.about_project_mill')}} Project Mill</a>
     </p>
     <p v-if="!tracking">
       OCM v{{version}}
@@ -20,7 +21,8 @@
       <a @click="enableTracking">{{ $t('tracking.enable_tracking') }}</a>
       <span>
         &nbsp;-
-        <a @click="reportIssue">{{ $t('tracking.report_issue') }}</a>
+        <a @click="reportIssue">{{ $t('tracking.report_issue') }}</a> -
+        <a style="display: none" @click="aboutPM"> {{$t('tracking.about_project_mill')}} Project Mill</a>
       </span>
     </p>
   </div>
@@ -56,6 +58,9 @@ export default {
     },
     reportIssue: function() {
       window.backend.Backend.ReportIssue();
+    },
+    aboutPM: function () {
+      window.backend.Backend.AboutPM();
     },
     enableTracking: function() {
       this.tracking = true;

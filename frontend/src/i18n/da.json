@@ -59,7 +59,8 @@
         "closed_source" : "Brug closed-source minere",
         "closed_source_sub" : "Bedre hashrate, men uanmeldte minere der pådrager sig udvikler gebyr",
         "closed_source_warning" : "Du har valgt at benytte closed-source miner(e). Vertcoin støtter og supporterer IKKE disse minere.  De kan ikke undersøges for indhold og kunne derfor benytte sig af funktioner der kan være skadelige for din computer.",        
-        "save_n_restart" : "Gem & Genstart"
+        "save_n_restart" : "Gem & Genstart",
+        "select_background" : "Vælg baggrund"
     },
     "tabbar" : {
         "wallet" : "Wallet",
@@ -72,7 +73,8 @@
         "disable_tracking" : "Slå deling af statistik fra",
         "tracking_disabled" : "Du deler ikke brugsstatistikker",        
         "enable_tracking" : "Slå deling af statistik til for at hjælpe os med at forbedre din oplevelse",
-        "report_issue" : "Anmeld fejl eller problemer"
+        "report_issue" : "Anmeld fejl eller problemer",
+        "about_project_mill": "Om"
     },
     "update" : {
         "new_version_available" : "Ny version er tilgængelig",

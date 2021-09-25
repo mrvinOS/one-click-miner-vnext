@@ -59,7 +59,8 @@
         "closed_source" : "クローズドソースマイナーを使用する",
         "closed_source_sub" : "ハッシュレートは向上していますが、開発者の費用がかかる未監査のマイナー",
         "closed_source_warning" : "クローズドソースマイナーを使用することを選択しました。ヴァートコインはこれらのマイナーを支持しません。内容を監査することはできず、コンピュータに害を及ぼす機能が含まれている可能性があります。",
-        "save_n_restart" : "保存して再起動"
+        "save_n_restart" : "保存して再起動",
+        "select_background" : "背景を選択"
     },
     "tabbar" : {
         "wallet" : "ウォレット",
@@ -72,7 +73,8 @@
         "disable_tracking" : "無効にする",
         "tracking_disabled" : "利用統計を共有していません",
         "enable_tracking" : "これらを有効にして利用体験の改善を行いさせるのを助けてください",
-        "report_issue" : "問題を報告する"
+        "report_issue" : "問題を報告する",
+        "about_project_mill": "だいたい"
     },
     "update" : {
         "new_version_available" : "新バージョン利用可能",
