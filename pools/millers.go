@@ -21,7 +21,7 @@ func NewMillers(addr string) *Millers {
 
 func (p *Millers) GetPendingPayout() uint64 {
 	jsonPayload := map[string]interface{}{}
-	err := util.GetJson(fmt.Sprintf("https://millerspool.com:4000/api/pools/vtc1/miners/%s", p.Address), &jsonPayload)
+	err := util.GetJson(fmt.Sprintf("https://millerspool.com:4001/api/pools/vtc1/miners/%s", p.Address), &jsonPayload)
 	if err != nil {
 		return 0
 	}
