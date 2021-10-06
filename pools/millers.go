@@ -54,7 +54,7 @@ func (p *Millers) GetName() string {
 }
 
 func (p *Millers) GetFee() float64 {
-	return 2.0
+	return 1.5
 }
 
 func (p *Millers) OpenBrowserPayoutInfo(addr string) {
